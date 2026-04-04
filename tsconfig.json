@@ -4,8 +4,21 @@
     "baseUrl": ".",
     "strict": true,
     "paths": {
-      "@components": ["src/components"],
-      "@theme": ["src/theme"]
+      "@/*": [
+        "./src/*"
+      ],
+      "@components": [
+        "src/components"
+      ],
+      "@theme": [
+        "src/theme"
+      ]
     }
-  }
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".expo/types/**/*.ts",
+    "expo-env.d.ts"
+  ]
 }
