@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
 import { DevFloatingButton } from '@/components';
 import { startNetworkLogging } from 'react-native-network-logger';
+import '../localization/index';
 
 SplashScreen.preventAutoHideAsync();
 
