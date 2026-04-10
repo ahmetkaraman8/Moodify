@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "spotifyLogin": "Spotify ile devam et",
+    "guest": "Ziyaretçi olarak devam et",
+    "policy": "Devam ederek, Şartlar ve Gizlilik Politikamızı kabul etmiş oluyorsunuz."
+  }
+}
