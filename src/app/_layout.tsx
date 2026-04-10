@@ -5,8 +5,14 @@ import * as SplashScreen from 'expo-splash-screen';
 import { useFonts } from 'expo-font';
 import { useEffect } from 'react';
 import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+import { DevFloatingButton } from '@/components';
+import { startNetworkLogging } from 'react-native-network-logger';
 
 SplashScreen.preventAutoHideAsync();
+
+if (__DEV__) {
+  startNetworkLogging();
+}
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
@@ -32,8 +38,13 @@ export default function RootLayout() {
         <Stack>
           <Stack.Screen name="index" options={{ headerShown: false }} />
           <Stack.Screen name="storybook" options={{ headerShown: false }} />
+          <Stack.Screen
+            name="others/NetworkLoggerScreen"
+            options={{ headerShown: false }}
+          />
         </Stack>
         <StatusBar style="auto" />
+        <DevFloatingButton />
       </BottomSheetModalProvider>
     </GestureHandlerRootView>
   );
