@@ -8,7 +8,7 @@ export default function Home() {
     <View style={styles.container}>
       <Text
         size={typography.fontSize.xxl}
-        weight="regular"
+        weight={typography.fontFamily.regular}
         color={colors.text.primary}
       >
         Moodify App
