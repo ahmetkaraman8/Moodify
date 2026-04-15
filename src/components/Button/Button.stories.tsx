@@ -101,8 +101,6 @@ export const LinearGradient = () => (
         colors: gradients.genre.pop,
       }}
       textColor={colors.text.primary}
-      borderWidth={5}
-      borderColor="red"
     />
     <Button
       title="Rock"

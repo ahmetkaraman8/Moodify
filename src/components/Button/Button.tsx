@@ -10,7 +10,7 @@ import { ReactNode } from 'react';
 import { colors, spacing, typography } from '@/theme';
 import { FontWeightValues, GradientProps } from '@/types';
 import { common } from '@/utils';
-import { LinearGradient } from 'expo-linear-gradient';
+import LinearGradient from 'react-native-linear-gradient';
 
 interface ButtonProps {
   title: string;

@@ -1,7 +1,4 @@
-import { ColorValue } from 'react-native';
 import { colors } from './colors';
-
-type GradientTuple = readonly [ColorValue, ColorValue, ...ColorValue[]];
 
 export const gradients = {
   genre: {
@@ -36,4 +33,4 @@ export const gradients = {
     rainy: [colors.weather.rainyStart, colors.weather.rainyEnd],
     night: [colors.weather.nightStart, colors.weather.nightEnd],
   },
-} as const satisfies Record<string, Record<string, GradientTuple>>;
+};
