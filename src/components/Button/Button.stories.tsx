@@ -1,4 +1,4 @@
-import { colors, spacing } from '@/theme';
+import { colors, gradients, spacing } from '@/theme';
 import { Icons } from '@assets';
 import React from 'react';
 import { View } from 'react-native';
@@ -88,6 +88,29 @@ export const PaddingVariants = () => (
       onPress={() => {}}
       paddingVertical={spacing.lg}
       paddingHorizontal={spacing.xxl}
+    />
+  </Wrapper>
+);
+
+export const LinearGradient = () => (
+  <Wrapper>
+    <Button
+      title="Pop"
+      onPress={() => {}}
+      gradient={{
+        colors: gradients.genre.pop,
+      }}
+      textColor={colors.text.primary}
+      borderWidth={5}
+      borderColor="red"
+    />
+    <Button
+      title="Rock"
+      onPress={() => {}}
+      gradient={{
+        colors: gradients.genre.rock,
+      }}
+      textColor={colors.text.primary}
     />
   </Wrapper>
 );
