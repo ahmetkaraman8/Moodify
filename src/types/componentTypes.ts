@@ -1,5 +1,4 @@
 import { typography } from '@/theme';
-import { ColorValue } from 'react-native';
 
 export type FontWeightValues =
   (typeof typography.fontFamily)[keyof typeof typography.fontFamily];

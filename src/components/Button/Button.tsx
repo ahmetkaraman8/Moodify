@@ -1,15 +1,14 @@
+import { colors, spacing, typography } from '@/theme';
+import { FontWeightValues, GradientProps } from '@/types';
+import { common } from '@/utils';
+import { Text } from '@components';
+import { ReactNode } from 'react';
 import {
   ActivityIndicator,
-  StyleProp,
   TouchableOpacity,
   View,
   ViewStyle,
 } from 'react-native';
-import { Text } from '@components';
-import { ReactNode } from 'react';
-import { colors, spacing, typography } from '@/theme';
-import { FontWeightValues, GradientProps } from '@/types';
-import { common } from '@/utils';
 import LinearGradient from 'react-native-linear-gradient';
 
 interface ButtonProps {
