@@ -1,19 +1,21 @@
 import { FontWeightValues } from '@/types';
-import { colors, typography } from '@theme';
+import { colors, fontSize, fontFamily } from '@theme';
 import { Text as RNText, TextStyle } from 'react-native';
 
 interface TextProps {
   size?: number;
   weight?: FontWeightValues;
   color?: string;
+  lineHeight?: number;
   children: React.ReactNode;
   style?: TextStyle | TextStyle[];
 }
 
 export const Text = ({
-  size = typography.fontSize.md,
-  weight = typography.fontFamily.regular,
+  size = fontSize.md,
+  weight = fontFamily.regular,
   color = colors.text.disabled,
+  lineHeight = fontSize.md,
   children,
   style,
 }: TextProps) => {
@@ -23,6 +25,7 @@ export const Text = ({
         {
           fontSize: size,
           fontFamily: weight,
+          lineHeight,
           color,
         },
         style,

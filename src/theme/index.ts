@@ -1,4 +1,4 @@
 export { colors } from './colors';
 export { gradients } from './gradients';
-export { typography } from './typography';
+export { fontSize, fontFamily } from './typography';
 export { spacing } from './spacing';

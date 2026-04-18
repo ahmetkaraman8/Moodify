@@ -1,4 +1,4 @@
-import { colors, spacing, typography } from '@/theme';
+import { colors, spacing, fontSize, fontFamily } from '@/theme';
 import { FontWeightValues, GradientProps } from '@/types';
 import { common } from '@/utils';
 import { Text } from '@components';
@@ -17,8 +17,9 @@ interface ButtonProps {
   backgroundColor?: string;
   gradient?: GradientProps;
   textColor?: string;
-  fontSize?: number;
+  textSize?: number;
   fontWeight?: FontWeightValues;
+  lineHeight?: number;
   borderRadius?: number;
   borderWidth?: number;
   borderColor?: string;
@@ -38,17 +39,18 @@ export const Button = ({
   backgroundColor = colors.background.card,
   gradient,
   textColor = colors.text.primary,
-  fontSize = typography.fontSize.md,
-  fontWeight = typography.fontFamily.regular,
+  textSize = fontSize.md,
+  fontWeight = fontFamily.regular,
+  lineHeight = fontSize.md,
   borderRadius = 16,
   borderWidth,
   borderColor,
-  paddingVertical = spacing.md,
-  paddingHorizontal = spacing.md,
+  paddingVertical = spacing[16],
+  paddingHorizontal = spacing[16],
   disabled = false,
   loading = false,
   icon,
-  iconSpacing = spacing.xs,
+  iconSpacing = spacing[8],
   fullWidth = false,
   style,
 }: ButtonProps) => {
@@ -60,9 +62,10 @@ export const Button = ({
         {icon && <View style={{ marginRight: iconSpacing }}>{icon}</View>}
         <Text
           style={{ includeFontPadding: false }}
-          size={fontSize}
+          size={textSize}
           weight={fontWeight}
           color={textColor}
+          lineHeight={lineHeight}
         >
           {title}
         </Text>
