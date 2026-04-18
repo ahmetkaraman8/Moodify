@@ -6,4 +6,8 @@ export const common = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  allCenter: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 });

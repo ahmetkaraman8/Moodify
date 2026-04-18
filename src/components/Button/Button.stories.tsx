@@ -14,8 +14,8 @@ const Wrapper = ({ children }: { children: React.ReactNode }) => (
       flex: 1,
       alignItems: 'center',
       justifyContent: 'center',
-      gap: spacing.md,
-      padding: spacing.md,
+      gap: spacing[16],
+      padding: spacing[16],
     }}
   >
     {children}
@@ -79,15 +79,15 @@ export const PaddingVariants = () => (
     <Button
       title="Small Padding"
       onPress={() => {}}
-      paddingVertical={spacing.xs}
-      paddingHorizontal={spacing.sm}
+      paddingVertical={spacing[8]}
+      paddingHorizontal={spacing[12]}
     />
 
     <Button
       title="Large Padding"
       onPress={() => {}}
-      paddingVertical={spacing.lg}
-      paddingHorizontal={spacing.xxl}
+      paddingVertical={spacing[20]}
+      paddingHorizontal={spacing[28]}
     />
   </Wrapper>
 );

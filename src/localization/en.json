@@ -3,5 +3,10 @@
     "spotifyLogin": "Continue with Spotify",
     "guest": "Continue as a guest",
     "policy": "By continuing, you agree to our Terms and Privacy Policy."
+  },
+  "home": {
+    "start": "Start Here",
+    "feeling": "How are you feeling?",
+    "chooseMood": "Choose your mood"
   }
 }

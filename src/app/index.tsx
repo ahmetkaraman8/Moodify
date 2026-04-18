@@ -1,14 +1,14 @@
 import { View, StyleSheet, Button } from 'react-native';
 import { Text } from '@components';
-import { colors, typography } from '@theme';
+import { colors, fontSize, fontFamily } from '@theme';
 import { Icons } from '@assets';
 
 export default function Home() {
   return (
     <View style={styles.container}>
       <Text
-        size={typography.fontSize.xxl}
-        weight={typography.fontFamily.regular}
+        size={fontSize.xxl}
+        weight={fontFamily.regular}
         color={colors.text.primary}
       >
         Moodify App
