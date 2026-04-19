@@ -14,6 +14,8 @@ export const ChooseMoodCard = ({ onPress }: ChooseMoodCardProps) => {
   return (
     <LinearGradient
       colors={[colors.accent.electricPurple, colors.accent.neonPink]}
+      start={{ x: 0, y: 0 }}
+      end={{ x: 1, y: 1 }}
       style={[styles.container, common.allCenter]}
     >
       <View style={[styles.text, common.allCenter]}>
