@@ -7,6 +7,10 @@
   "home": {
     "start": "Buradan Başla",
     "feeling": "Nasıl hissediyorsun?",
-    "chooseMood": "Modunu seç"
+    "chooseMood": "Modunu seç",
+    "insightHeader": "SENİN İÇİN",
+    "insightText1": "Genellikle bu saatlerde ",
+    "insightText2": " dinlersin.",
+    "insightButton": "{{mood}} Çalma Listesi Oluştur"
   }
 }
