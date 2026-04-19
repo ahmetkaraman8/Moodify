@@ -7,6 +7,10 @@
   "home": {
     "start": "Start Here",
     "feeling": "How are you feeling?",
-    "chooseMood": "Choose your mood"
+    "chooseMood": "Choose your mood",
+    "insightHeader": "INSIGHT",
+    "insightText1": "You usually listen to ",
+    "insightText2": " around this time.",
+    "insightButton": "Create {{mood}} Playlist"
   }
 }

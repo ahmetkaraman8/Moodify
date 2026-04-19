@@ -10,4 +10,10 @@ export const common = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  richTextRow: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });

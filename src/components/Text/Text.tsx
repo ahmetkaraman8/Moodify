@@ -27,6 +27,8 @@ export const Text = ({
           fontFamily: weight,
           lineHeight,
           color,
+          textAlignVertical: 'center',
+          includeFontPadding: false,
         },
         style,
       ]}
