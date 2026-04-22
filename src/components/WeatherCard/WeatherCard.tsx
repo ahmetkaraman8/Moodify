@@ -23,12 +23,13 @@ export const WeatherCard = ({ weather }: WeatherCardProps) => {
   const textButtonColors = gradients.weatherTextButton[weather];
   return (
     <TouchableOpacity style={common.width100}>
-      <LinearGradient
-        colors={weatherColors}
-        start={{ x: 0, y: 0 }}
-        end={{ x: 1, y: 0 }}
-        style={styles.container}
-      >
+      <View style={styles.container}>
+        <LinearGradient
+          colors={weatherColors}
+          start={{ x: 0, y: 0 }}
+          end={{ x: 1, y: 0 }}
+          style={styles.background}
+        />
         <View style={common.justifyCenter}>
           <IconComponent />
         </View>
@@ -59,7 +60,7 @@ export const WeatherCard = ({ weather }: WeatherCardProps) => {
             {t('weather.textButton')}
           </GradientText>
         </View>
-      </LinearGradient>
+      </View>
     </TouchableOpacity>
   );
 };
@@ -70,6 +71,11 @@ const styles = StyleSheet.create({
     padding: spacing[16],
     gap: spacing[8],
     borderRadius: 20,
+    overflow: 'hidden',
+  },
+  background: {
+    ...StyleSheet.absoluteFillObject,
+    opacity: 0.6,
   },
   textContainer: {
     flex: 1,

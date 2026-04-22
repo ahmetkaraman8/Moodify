@@ -1,6 +1,5 @@
 import { View } from 'react-native';
 import { WeatherCard } from './WeatherCard';
-import { InsightCard } from '../InsightCard/InsightCard';
 
 export default {
   title: 'Components/WeatherCard',
@@ -13,6 +12,7 @@ export const Sunny = () => (
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 24,
+      backgroundColor: 'black',
     }}
   >
     <WeatherCard weather="sunny" />
@@ -25,6 +25,7 @@ export const Cloudy = () => (
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 24,
+      backgroundColor: 'black',
     }}
   >
     <WeatherCard weather="cloudy" />
@@ -37,6 +38,7 @@ export const Rainy = () => (
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 24,
+      backgroundColor: 'black',
     }}
   >
     <WeatherCard weather="rainy" />
@@ -49,6 +51,7 @@ export const Night = () => (
       alignItems: 'center',
       justifyContent: 'center',
       paddingHorizontal: 24,
+      backgroundColor: 'black',
     }}
   >
     <WeatherCard weather="night" />
