@@ -1,0 +1,1 @@
+export { useWeatherContent } from './useWeatherContent';

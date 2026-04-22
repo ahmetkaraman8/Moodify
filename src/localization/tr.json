@@ -12,5 +12,54 @@
     "insightText1": "Genellikle bu saatlerde ",
     "insightText2": " dinlersin.",
     "insightButton": "{{mood}} Çalma Listesi Oluştur"
+  },
+  "weather": {
+    "sunny": {
+      "titles": [
+        "{{city}}’de güneşli bir {{day}} sabahı",
+        "{{city}}’de parlak bir {{day}} havası",
+        "{{city}}’de {{day}} gününe güneşli bir başlangıç"
+      ],
+      "descriptions": [
+        "Güne biraz enerjiyle başlamaya ne dersin?",
+        "Yükselten bir çalma listesi için harika bir zaman.",
+        "Ruh halini taze bir şeyle yükseltelim."
+      ]
+    },
+    "cloudy": {
+      "titles": [
+        "{{city}}’de bulutlu bir {{day}}",
+        "{{city}} üzerinde gri bir {{day}} gökyüzü"
+      ],
+      "descriptions": [
+        "Sakin ve rahat bir şeyler çalalım mı?",
+        "Hafif bir çalma listesi bu havaya yakışır."
+      ]
+    },
+    "rainy": {
+      "titles": [
+        "{{city}}’de yağmurlu bir {{day}}",
+        "Bu {{day}} günü {{city}}’de yağmur damlaları yağıyor",
+        "{{city}}’de yağmur altında sakin bir {{day}}"
+      ],
+      "descriptions": [
+        "Duygusal vibe’lar için mükemmel bir hava.",
+        "Biraz yavaşlayalım, daha hafif bir şeyler dinleyelim.",
+        "Yağmur ile cozy bir çalma listesi nasıl olur?"
+      ]
+    },
+    "night": {
+      "titles": [
+        "{{city}}’de geç saatlerde bir {{day}} gecesi",
+        "{{city}} geceleri bambaşka",
+        "{{city}}’de sakin bir {{day}} gecesi"
+      ],
+      "descriptions": [
+        "Chill ve derin vibe’ların zamanı.",
+        "Bırak gece çalma listene yön versin.",
+        "Yumuşak ve atmosferik bir şeyler için mükemmel bir an."
+      ]
+    },
+    "textButton": "Bu modu dene"
   }
 }
