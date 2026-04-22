@@ -7,3 +7,5 @@ export type GradientProps = {
 };
 
 export type MoodType = keyof typeof gradients.mood;
+
+export type WeatherType = 'sunny' | 'cloudy' | 'rainy' | 'night';

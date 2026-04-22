@@ -31,6 +31,13 @@ export const gradients = {
   weather: {
     sunny: [colors.weather.sunnyStart, colors.weather.sunnyEnd],
     rainy: [colors.weather.rainyStart, colors.weather.rainyEnd],
+    cloudy: [colors.weather.rainyStart, colors.weather.rainyEnd],
     night: [colors.weather.nightStart, colors.weather.nightEnd],
+  },
+  weatherTextButton: {
+    sunny: [colors.genre.popEnd, colors.genre.popStart],
+    rainy: [colors.mood.chillStart, colors.mood.chillEnd],
+    cloudy: [colors.mood.focusEnd, colors.mood.focusStart],
+    night: [colors.mood.sadStart, colors.mood.sadEnd],
   },
 };

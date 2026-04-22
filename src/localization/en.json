@@ -12,5 +12,54 @@
     "insightText1": "You usually listen to ",
     "insightText2": " around this time.",
     "insightButton": "Create {{mood}} Playlist"
+  },
+  "weather": {
+    "sunny": {
+      "titles": [
+        "Sunny {{day}} morning in {{city}}",
+        "Bright {{day}} vibes in {{city}}",
+        "A sunny start to {{day}} in {{city}}"
+      ],
+      "descriptions": [
+        "How about starting the day with some energy?",
+        "Perfect time for an uplifting playlist.",
+        "Let’s boost your mood with something fresh."
+      ]
+    },
+    "cloudy": {
+      "titles": [
+        "Cloudy {{day}} in {{city}}",
+        "Grey skies over {{city}} this {{day}}"
+      ],
+      "descriptions": [
+        "Maybe something calm and cozy?",
+        "A soft playlist would fit this mood."
+      ]
+    },
+    "rainy": {
+      "titles": [
+        "Rainy {{day}} in {{city}}",
+        "Raindrops falling over {{city}} this {{day}}",
+        "A quiet {{day}} under the rain in {{city}}"
+      ],
+      "descriptions": [
+        "Perfect weather for emotional vibes.",
+        "Let’s slow things down with something mellow.",
+        "Maybe a cozy playlist for the rain?"
+      ]
+    },
+    "night": {
+      "titles": [
+        "Late {{day}} night in {{city}}",
+        "{{city}} nights hit different",
+        "A calm {{day}} night in {{city}}"
+      ],
+      "descriptions": [
+        "Time for some chill and deep vibes.",
+        "Let the night guide your playlist.",
+        "Perfect moment for something smooth and atmospheric."
+      ]
+    },
+    "textButton": "Try this mood"
   }
 }

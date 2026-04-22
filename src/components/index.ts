@@ -4,3 +4,4 @@ export { Button } from './Button/Button';
 export { ChooseMoodCard } from './ChooseMoodCard/ChooseMoodCard';
 export { GradientText } from './GradientText/GradientText';
 export { InsightCard } from './InsightCard/InsightCard';
+export { WeatherCard } from './WeatherCard/WeatherCard';
