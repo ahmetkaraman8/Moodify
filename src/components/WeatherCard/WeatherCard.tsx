@@ -10,9 +10,10 @@ import { useTranslation } from 'react-i18next';
 
 type WeatherCardProps = {
   weather: WeatherType;
+  onPress?: () => void;
 };
 
-export const WeatherCard = ({ weather }: WeatherCardProps) => {
+export const WeatherCard = ({ weather, onPress }: WeatherCardProps) => {
   const { t } = useTranslation();
   const { title, description } = useWeatherContent(weather, {
     city: 'Istanbul',
@@ -22,7 +23,7 @@ export const WeatherCard = ({ weather }: WeatherCardProps) => {
   const weatherColors = gradients.weather[weather];
   const textButtonColors = gradients.weatherTextButton[weather];
   return (
-    <TouchableOpacity style={common.width100}>
+    <TouchableOpacity style={common.width100} onPress={onPress}>
       <View style={styles.container}>
         <LinearGradient
           colors={weatherColors}
