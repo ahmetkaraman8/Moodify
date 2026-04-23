@@ -29,7 +29,7 @@ export const WeatherCard = ({ weather, onPress }: WeatherCardProps) => {
           colors={weatherColors}
           start={{ x: 0, y: 0 }}
           end={{ x: 1, y: 0 }}
-          style={styles.background}
+          style={common.opacity06Background}
         />
         <View style={common.justifyCenter}>
           <IconComponent />
@@ -73,10 +73,6 @@ const styles = StyleSheet.create({
     gap: spacing[8],
     borderRadius: 20,
     overflow: 'hidden',
-  },
-  background: {
-    ...StyleSheet.absoluteFillObject,
-    opacity: 0.6,
   },
   textContainer: {
     flex: 1,
