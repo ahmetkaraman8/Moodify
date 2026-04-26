@@ -15,13 +15,23 @@ export const gradients = {
     kpop: [colors.genre.kpopStart, colors.genre.kpopEnd],
     afro: [colors.genre.afroStart, colors.genre.afroEnd],
   },
-  mood: {
+  musicMood: {
     chill: [colors.mood.chillStart, colors.mood.chillEnd],
     happy: [colors.mood.happyStart, colors.mood.happyEnd],
     sad: [colors.mood.sadStart, colors.mood.sadEnd],
     dark: [colors.mood.darkStart, colors.mood.darkEnd],
     focus: [colors.mood.focusStart, colors.mood.focusEnd],
     romantic: [colors.mood.romanticStart, colors.mood.romanticEnd],
+  },
+  emotionMood: {
+    happy: [colors.emotionMood.happyStart, colors.emotionMood.happyEnd],
+    motivated: [colors.emotionMood.motivatedStart, colors.emotionMood.motivatedEnd],
+    energetic: [colors.emotionMood.energeticStart, colors.emotionMood.energeticEnd],
+    angry: [colors.emotionMood.angryStart, colors.emotionMood.angryEnd],
+    calm: [colors.emotionMood.calmStart, colors.emotionMood.calmEnd],
+    sad: [colors.emotionMood.sadStart, colors.emotionMood.sadEnd],
+    anxious: [colors.emotionMood.anxiousStart, colors.emotionMood.anxiousEnd],
+    tired: [colors.emotionMood.tiredStart, colors.emotionMood.tiredEnd],
   },
   energy: {
     low: [colors.energy.lowStart, colors.energy.lowEnd],

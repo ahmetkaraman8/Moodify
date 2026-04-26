@@ -1,26 +1,29 @@
-import { StyleSheet, TouchableOpacity, View } from 'react-native';
-import { Text } from '@components';
-import { Icons } from '@assets';
-import { GenreType, MoodType } from '@/types';
-import LinearGradient from 'react-native-linear-gradient';
-import { colors, fontFamily, fontSize, gradients, spacing } from '@/theme';
+import { useSessionColor, useSessionTitle } from '@/hooks';
+import { colors, fontFamily, fontSize, spacing } from '@/theme';
+import { ActivityType, EmotionMoodType, GenreType, MusicMoodType, WeatherType } from '@/types';
 import { common } from '@/utils';
-import { useSessionColor } from '@/hooks';
+import { Icons } from '@assets';
+import { Text } from '@components';
+import { StyleSheet, TouchableOpacity, View } from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 interface RecentSessionCardProps {
-  title: string;
-  baseMood: MoodType;
-  targetMood?: MoodType;
-  genre: GenreType;
+  baseMood: MusicMoodType | EmotionMoodType;
+  targetMood?: EmotionMoodType;
+  activity?: ActivityType;
+  weather?: WeatherType;
+  genre?: GenreType[];
 }
 
 export const RecentSessionCard = ({
-  title,
   baseMood,
   targetMood,
+  activity,
+  weather,
   genre,
 }: RecentSessionCardProps) => {
   const backgroundColors = useSessionColor({ baseMood, targetMood });
+  const title = useSessionTitle({ baseMood, targetMood, activity, weather, genre });
   return (
     <TouchableOpacity>
       <View style={styles.container}>

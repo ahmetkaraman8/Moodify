@@ -27,10 +27,7 @@
       ]
     },
     "cloudy": {
-      "titles": [
-        "{{city}}’de bulutlu bir {{day}}",
-        "{{city}} üzerinde gri bir {{day}} gökyüzü"
-      ],
+      "titles": ["{{city}}’de bulutlu bir {{day}}", "{{city}} üzerinde gri bir {{day}} gökyüzü"],
       "descriptions": [
         "Sakin ve rahat bir şeyler çalalım mı?",
         "Hafif bir çalma listesi bu havaya yakışır."
@@ -61,5 +58,62 @@
       ]
     },
     "textButton": "Bu modu dene"
+  },
+  "weatherSessionTitle": {
+    "sunny": "Enerjik • Güneşli Gün",
+    "cloudy": "Depresif • Bulutlu Gün",
+    "rainy": "Sakin • Yağmurlu Gün",
+    "night": "Chill • Gece"
+  },
+  "moodShift": {
+    "boost": "Yükseltici",
+    "energizing": "Enerji Verici",
+    "depressing": "Depresif",
+    "intense": "Yoğun",
+    "uplifting": "Moral Yükseltici",
+    "highMotivation": "Yüksek Motivasyon",
+    "focus": "Odak",
+    "healing": "İyileştirici",
+    "recovery": "Toparlanma",
+    "soothing": "Sakinleştirici",
+    "relaxing": "Rahatlatıcı"
+  },
+  "mood": {
+    "chill": "Rahat",
+    "happy": "Mutlu",
+    "sad": "Üzgün",
+    "dark": "Karanlık",
+    "focus": "Odak",
+    "romantic": "Romantik",
+    "motivated": "Motive",
+    "energetic": "Enerjik",
+    "angry": "Öfkeli",
+    "calm": "Sakin",
+    "anxious": "Kaygılı",
+    "tired": "Yorgun"
+  },
+  "activity": {
+    "working": "Çalışma",
+    "studying": "Ders Çalışma",
+    "workingOut": "Egzersiz",
+    "walking": "Yürüyüş",
+    "relaxing": "Dinlenme",
+    "driving": "Araba Sürme",
+    "gaming": "Oyun Oynama"
+  },
+
+  "genre": {
+    "electronic": "Elektronik",
+    "pop": "Pop",
+    "rock": "Rock",
+    "rap": "Rap",
+    "indie": "Indie",
+    "jazzBlues": "Caz & Blues",
+    "classical": "Klasik",
+    "rnb": "R&B",
+    "ambient": "Ambiyans",
+    "phonk": "Phonk",
+    "kpop": "K-Pop",
+    "afro": "Afro"
   }
 }

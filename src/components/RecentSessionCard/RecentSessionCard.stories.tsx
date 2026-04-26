@@ -16,6 +16,6 @@ export const Default = () => (
       gap: 8,
     }}
   >
-    <RecentSessionCard title="Chilling at Work" baseMood="chill" genre="pop" />
+    <RecentSessionCard baseMood="energetic" activity="workingOut" />
   </View>
 );

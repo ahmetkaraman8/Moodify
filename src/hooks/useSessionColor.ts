@@ -1,19 +1,23 @@
 import { gradients } from '@/theme';
-import { MoodType } from '@/types';
+import { EmotionMoodType, MusicMoodType } from '@/types';
 
 type Params = {
-  baseMood: MoodType;
-  targetMood?: MoodType;
+  baseMood: MusicMoodType | EmotionMoodType;
+  targetMood?: EmotionMoodType;
 };
 
 export const useSessionColor = ({ baseMood, targetMood }: Params) => {
-  let colors;
+  const isEmotionMood = (mood: EmotionMoodType | MusicMoodType): mood is EmotionMoodType => {
+    return mood in gradients.emotionMood;
+  };
 
-  if (targetMood) {
-    colors = [gradients.mood[baseMood][0], gradients.mood[targetMood][1]];
+  if (isEmotionMood(baseMood)) {
+    if (targetMood) {
+      return [gradients.emotionMood[baseMood][0], gradients.emotionMood[targetMood][1]];
+    }
+
+    return [gradients.emotionMood[baseMood][0], gradients.emotionMood[baseMood][1]];
   } else {
-    colors = [gradients.mood[baseMood][0], gradients.mood[baseMood][1]];
+    return [gradients.musicMood[baseMood][0], gradients.musicMood[baseMood][1]];
   }
-
-  return colors;
 };
