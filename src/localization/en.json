@@ -75,6 +75,34 @@
     "soothing": "Soothing",
     "relaxing": "Relaxing"
   },
+  "moodActivity": {
+    "highEnergy": "High Energy",
+    "powerSession": "Power Session",
+    "rage": "Rage Mode",
+    "lightEnergy": "Light Energy",
+
+    "deepFocus": "Deep Focus",
+    "productive": "Productive",
+    "focusRecovery": "Focus Recovery",
+    "lightFocus": "Light Focus",
+
+    "unwind": "Unwind",
+    "healing": "Healing",
+    "calmDown": "Calm Down",
+
+    "mindfulWalk": "Mindful",
+    "clearMind": "Clear Mind",
+    "reset": "Reset",
+
+    "smoothRide": "Smooth Ride",
+    "nightDrive": "Night",
+    "lateNightDrive": "Late Night",
+
+    "intense": "Intense",
+    "grindMode": "Grind Mode",
+    "rageMode": "Rage Mode",
+    "casualPlay": "Casual"
+  },
   "mood": {
     "chill": "Chill",
     "happy": "Happy",

@@ -78,6 +78,34 @@
     "soothing": "Sakinleştirici",
     "relaxing": "Rahatlatıcı"
   },
+  "moodActivity": {
+    "highEnergy": "Yüksek Enerjili",
+    "powerSession": "Güçlü",
+    "rage": "Öfke Modu",
+    "lightEnergy": "Hafif Enerji",
+
+    "deepFocus": "Derin Odak",
+    "productive": "Verimli",
+    "focusRecovery": "Odak Toparlama",
+    "lightFocus": "Hafif Odak",
+
+    "unwind": "Rahatlatıcı",
+    "healing": "İyileştirici",
+    "calmDown": "Sakinleştirici",
+
+    "mindfulWalk": "Düşünceli",
+    "clearMind": "Zihni Temizleyen",
+    "reset": "Resetleyici",
+
+    "smoothRide": "Keyifli",
+    "nightDrive": "Gece Vakti",
+    "lateNightDrive": "Geç Saatte",
+
+    "intense": "Yoğun",
+    "grindMode": "Grind Mod",
+    "rageMode": "Öfkeli",
+    "casualPlay": "Rahat"
+  },
   "mood": {
     "chill": "Rahat",
     "happy": "Mutlu",

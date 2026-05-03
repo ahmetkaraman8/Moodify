@@ -1,5 +1,5 @@
 import { ActivityType, EmotionMoodType, GenreType, MusicMoodType, WeatherType } from '@/types';
-import { moodShiftNamer } from '@/utils';
+import { moodActivityNamer, moodShiftNamer } from '@/utils';
 import { useTranslation } from 'react-i18next';
 
 type Params = {
@@ -27,7 +27,13 @@ export const useSessionTitle = ({ baseMood, targetMood, activity, weather, genre
   } else if (genre?.length === 1) {
     title = `${t(`mood.${baseMood}`)} ${t(`genre.${genre}`)}`;
   } else if (activity) {
-    title = `${t(`mood.${baseMood}`)} ${t(`activity.${activity}`)}`;
+    const prefix = moodActivityNamer(baseMood, activity);
+
+    if (prefix) {
+      title = `${t(`moodActivity.${prefix}`)} ${t(`activity.${activity}`)}`;
+    } else {
+      title = `${t(`mood.${baseMood}`)} ${t(`activity.${activity}`)}`;
+    }
   } else {
     title = `${t(`mood.${baseMood}`)}`;
   }

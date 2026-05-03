@@ -1,5 +1,6 @@
-import { EmotionMoodType, MusicMoodType } from '@/types';
+import { ActivityType, EmotionMoodType, MusicMoodType } from '@/types';
 import { moodShiftMap } from './moodShiftMap';
+import { moodActivityMap } from './moodActivityMap';
 
 export const capitalizeFirstLetter = (text?: string) => {
   if (!text) return '';
@@ -13,4 +14,12 @@ export const moodShiftNamer = (
   const key = `${baseMood} -> ${targetMood}`;
 
   return moodShiftMap[key] ?? null;
+};
+
+export const moodActivityNamer = (
+  mood: MusicMoodType | EmotionMoodType,
+  activity: ActivityType,
+) => {
+  const key = `${mood}->${activity}`;
+  return moodActivityMap[key] ?? null;
 };
