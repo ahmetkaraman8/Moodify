@@ -64,6 +64,25 @@ export const colors = {
     romanticEnd: '#A78BFA',
   },
 
+  emotionMood: {
+    happyStart: '#FACC15',
+    happyEnd: '#FF9F1C',
+    motivatedStart: '#22C55E',
+    motivatedEnd: '#3DA9FC',
+    energeticStart: '#FF4D8D',
+    energeticEnd: '#FF3B3B',
+    angryStart: '#DC2626',
+    angryEnd: '#7F1D1D',
+    calmStart: '#2DD4BF',
+    calmEnd: '#3DA9FC',
+    sadStart: '#64748B',
+    sadEnd: '#1E3A8A',
+    anxiousStart: '#A78BFA',
+    anxiousEnd: '#F472B6',
+    tiredStart: '#6B7280',
+    tiredEnd: '#374151',
+  },
+
   energy: {
     lowStart: '#334155',
     lowEnd: '#22D3EE',

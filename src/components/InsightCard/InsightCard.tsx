@@ -1,18 +1,18 @@
 import { colors, fontFamily, fontSize, gradients, spacing } from '@/theme';
-import { MoodType } from '@/types';
+import { MusicMoodType } from '@/types';
 import { capitalizeFirstLetter, common } from '@/utils';
 import { GradientText, Text } from '@components';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 interface InsightCardProps {
-  mood: MoodType;
+  mood: MusicMoodType;
   onPress: () => void;
 }
 
 export const InsightCard = ({ mood, onPress }: InsightCardProps) => {
   const { t } = useTranslation();
-  const genreColors = gradients.mood[mood];
+  const genreColors = gradients.musicMood[mood];
   const moodText = capitalizeFirstLetter(mood);
   const TextButton = () => {
     return (
@@ -27,25 +27,13 @@ export const InsightCard = ({ mood, onPress }: InsightCardProps) => {
   const renderGenreText = () => {
     return (
       <View style={common.richTextRow}>
-        <Text
-          size={fontSize.md}
-          lineHeight={fontSize.xxl}
-          color={colors.text.primary}
-        >
+        <Text size={fontSize.md} lineHeight={fontSize.xxl} color={colors.text.primary}>
           {t('home.insightText1')}
         </Text>
-        <GradientText
-          size={fontSize.md}
-          lineHeight={fontSize.xxl}
-          colors={genreColors}
-        >
+        <GradientText size={fontSize.md} lineHeight={fontSize.xxl} colors={genreColors}>
           {moodText}
         </GradientText>
-        <Text
-          size={fontSize.md}
-          lineHeight={fontSize.xxl}
-          color={colors.text.primary}
-        >
+        <Text size={fontSize.md} lineHeight={fontSize.xxl} color={colors.text.primary}>
           {t('home.insightText2')}
         </Text>
       </View>

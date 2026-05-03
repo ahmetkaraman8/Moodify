@@ -6,6 +6,16 @@ export type GradientProps = {
   colors: string[];
 };
 
-export type MoodType = keyof typeof gradients.mood;
+export type MusicMoodType = keyof typeof gradients.musicMood;
+export type EmotionMoodType = keyof typeof gradients.emotionMood;
+export type GenreType = keyof typeof gradients.genre;
 
 export type WeatherType = 'sunny' | 'cloudy' | 'rainy' | 'night';
+export type ActivityType =
+  | 'working'
+  | 'studying'
+  | 'workingOut'
+  | 'walking'
+  | 'relaxing'
+  | 'driving'
+  | 'gaming';

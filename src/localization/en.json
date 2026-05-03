@@ -27,14 +27,8 @@
       ]
     },
     "cloudy": {
-      "titles": [
-        "Cloudy {{day}} in {{city}}",
-        "Grey skies over {{city}} this {{day}}"
-      ],
-      "descriptions": [
-        "Maybe something calm and cozy?",
-        "A soft playlist would fit this mood."
-      ]
+      "titles": ["Cloudy {{day}} in {{city}}", "Grey skies over {{city}} this {{day}}"],
+      "descriptions": ["Maybe something calm and cozy?", "A soft playlist would fit this mood."]
     },
     "rainy": {
       "titles": [
@@ -61,5 +55,89 @@
       ]
     },
     "textButton": "Try this mood"
+  },
+  "weatherSessionTitle": {
+    "sunny": "Energic • Sunny Day",
+    "cloudy": "Depressed • Cloudy Day",
+    "rainy": "Calm • Rainy Day",
+    "night": "Chill • Night"
+  },
+  "moodShift": {
+    "boost": "Boost",
+    "energizing": "Energizing",
+    "depressing": "Depressing",
+    "intense": "Intense",
+    "uplifting": "Uplifting",
+    "highMotivation": "High Motivation",
+    "focus": "Focus",
+    "healing": "Healing",
+    "recovery": "Recovery",
+    "soothing": "Soothing",
+    "relaxing": "Relaxing"
+  },
+  "moodActivity": {
+    "highEnergy": "High Energy",
+    "powerSession": "Power Session",
+    "rage": "Rage Mode",
+    "lightEnergy": "Light Energy",
+
+    "deepFocus": "Deep Focus",
+    "productive": "Productive",
+    "focusRecovery": "Focus Recovery",
+    "lightFocus": "Light Focus",
+
+    "unwind": "Unwind",
+    "healing": "Healing",
+    "calmDown": "Calm Down",
+
+    "mindfulWalk": "Mindful",
+    "clearMind": "Clear Mind",
+    "reset": "Reset",
+
+    "smoothRide": "Smooth Ride",
+    "nightDrive": "Night",
+    "lateNightDrive": "Late Night",
+
+    "intense": "Intense",
+    "grindMode": "Grind Mode",
+    "rageMode": "Rage Mode",
+    "casualPlay": "Casual"
+  },
+  "mood": {
+    "chill": "Chill",
+    "happy": "Happy",
+    "sad": "Sad",
+    "dark": "Dark",
+    "focus": "Focus",
+    "romantic": "Romantic",
+    "motivated": "Motivated",
+    "energetic": "Energetic",
+    "angry": "Angry",
+    "calm": "Calm",
+    "anxious": "Anxious",
+    "tired": "Tired"
+  },
+  "activity": {
+    "working": "Working",
+    "studying": "Studying",
+    "workingOut": "Working Out",
+    "walking": "Walking",
+    "relaxing": "Relaxing",
+    "driving": "Driving",
+    "gaming": "Gaming"
+  },
+  "genre": {
+    "electronic": "Electronic",
+    "pop": "Pop",
+    "rock": "Rock",
+    "rap": "Rap",
+    "indie": "Indie",
+    "jazzBlues": "Jazz Blues",
+    "classical": "Classical",
+    "rnb": "R&B",
+    "ambient": "Ambient",
+    "phonk": "Phonk",
+    "kpop": "K-Pop",
+    "afro": "Afro"
   }
 }

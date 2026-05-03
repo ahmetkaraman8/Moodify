@@ -26,9 +26,18 @@ export const common = StyleSheet.create({
   opacity06: {
     opacity: 0.6,
   },
+  opacity05: {
+    opacity: 0.5,
+  },
 
   //Width-Height
   width100: {
     width: '100%',
+  },
+
+  //Background
+  opacity06Background: {
+    ...StyleSheet.absoluteFillObject,
+    opacity: 0.6,
   },
 });
