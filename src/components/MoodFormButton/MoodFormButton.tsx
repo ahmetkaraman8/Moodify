@@ -1,20 +1,20 @@
 import { colors, fontFamily, fontSize, gradients } from '@/theme';
-import { ActivityType } from '@/types';
-import { activityEmojiMap, common } from '@/utils';
+import { ActivityType, EmotionMoodType } from '@/types';
+import { activityEmojiMap, common, isActivityType, moodEmojiMap } from '@/utils';
 import { Text } from '@components';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 interface MoodFormButton {
-  label: ActivityType;
+  label: ActivityType | EmotionMoodType;
   onPress: () => void;
 }
 
 export const MoodFormButton = ({ label, onPress }: MoodFormButton) => {
   const { t } = useTranslation();
-  const labelText = t(`activity.${label}`);
-  const emoji = activityEmojiMap[label];
+  const labelText = isActivityType(label) ? t(`activity.${label}`) : t(`mood.${label}`);
+  const emoji = isActivityType(label) ? activityEmojiMap[label] : moodEmojiMap[label];
   return (
     <TouchableOpacity onPress={onPress} style={styles.wrapper}>
       <LinearGradient
