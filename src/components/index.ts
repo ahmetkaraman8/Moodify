@@ -5,4 +5,5 @@ export { ChooseMoodCard } from './ChooseMoodCard/ChooseMoodCard';
 export { GradientText } from './GradientText/GradientText';
 export { InsightCard } from './InsightCard/InsightCard';
 export { WeatherCard } from './WeatherCard/WeatherCard';
-import { RecentSessionCard } from './RecentSessionCard/RecentSessionCard';
+export { RecentSessionCard } from './RecentSessionCard/RecentSessionCard';
+export { MoodFormButton } from './MoodFormButton/MoodFormButton';
