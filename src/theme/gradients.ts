@@ -50,4 +50,7 @@ export const gradients = {
     cloudy: [colors.mood.focusEnd, colors.mood.focusStart],
     night: [colors.mood.sadStart, colors.mood.sadEnd],
   },
+  other: {
+    moodFormButton: ['rgba(255,255,255,0.5)', 'rgba(255,255,255,0.20)'],
+  },
 };

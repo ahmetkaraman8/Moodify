@@ -100,4 +100,8 @@ export const colors = {
     nightStart: '#141E30',
     nightEnd: '#243B55',
   },
+
+  other: {
+    moodFormButton: '#1f1f1e',
+  },
 };
