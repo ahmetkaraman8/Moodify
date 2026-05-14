@@ -1,33 +1,36 @@
-import { colors, fontFamily, fontSize, gradients } from '@/theme';
-import { ActivityType, EmotionMoodType } from '@/types';
-import { activityEmojiMap, common, isActivityType, moodEmojiMap } from '@/utils';
+import { colors, fontFamily, gradients } from '@/theme';
+import { GenreType } from '@/types';
+import { common } from '@/utils';
 import { Text } from '@components';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-interface MoodFormButton {
-  label: ActivityType | EmotionMoodType;
+interface GenreButtonProps {
+  genre: GenreType;
+  isSelected: boolean;
   onPress: () => void;
 }
 
-export const MoodFormButton = ({ label, onPress }: MoodFormButton) => {
+export const GenreButton = ({ genre, isSelected, onPress }: GenreButtonProps) => {
   const { t } = useTranslation();
-  const labelText = isActivityType(label) ? t(`activity.${label}`) : t(`mood.${label}`);
-  const emoji = isActivityType(label) ? activityEmojiMap[label] : moodEmojiMap[label];
+
+  const genreText = t(`genre.${genre}`);
+
+  const gradientColors = isSelected ? gradients.genre[genre] : gradients.other.moodFormButton;
+
   return (
-    <TouchableOpacity onPress={onPress} style={common.flex1}>
+    <TouchableOpacity onPress={onPress} style={common.flex1} activeOpacity={0.9}>
       <LinearGradient
-        colors={gradients.other.moodFormButton}
+        colors={gradientColors}
         start={{ x: 0, y: 0 }}
         end={{ x: 1, y: 0 }}
         style={styles.gradientBorder}
       >
-        <View style={styles.container}>
+        <View style={[styles.container, isSelected && styles.selectedContainer]}>
           <View style={[styles.content, common.allCenter]}>
-            {emoji && <Text size={fontSize.xxl}>{emoji}</Text>}
             <Text color={colors.text.primary} weight={fontFamily.medium}>
-              {labelText}
+              {genreText}
             </Text>
           </View>
         </View>
@@ -44,11 +47,12 @@ const styles = StyleSheet.create({
   container: {
     borderRadius: 20,
     overflow: 'hidden',
-    position: 'relative',
     backgroundColor: colors.other.moodFormButton,
   },
+  selectedContainer: {
+    backgroundColor: 'transparent',
+  },
   content: {
-    gap: 12,
-    minHeight: 108,
+    minHeight: 60,
   },
 });

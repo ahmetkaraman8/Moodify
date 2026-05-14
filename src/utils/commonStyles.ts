@@ -3,6 +3,9 @@ import { opacity } from 'react-native-reanimated/lib/typescript/Colors';
 
 export const common = StyleSheet.create({
   //Container
+  flex1: {
+    flex: 1,
+  },
   allCenteredRow: {
     flexDirection: 'row',
     justifyContent: 'center',
