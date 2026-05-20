@@ -139,5 +139,13 @@
     "phonk": "Phonk",
     "kpop": "K-Pop",
     "afro": "Afro"
+  },
+  "language": {
+    "device": "My Language",
+    "english": "English",
+    "instrumental": "Instrumental",
+    "any": "Any Language",
+    "mixed": "Mixed",
+    "spanish": "Spanish"
   }
 }
