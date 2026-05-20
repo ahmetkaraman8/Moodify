@@ -129,7 +129,6 @@
     "driving": "Araba Sürme",
     "gaming": "Oyun Oynama"
   },
-
   "genre": {
     "electronic": "Elektronik",
     "pop": "Pop",
@@ -143,5 +142,13 @@
     "phonk": "Phonk",
     "kpop": "K-Pop",
     "afro": "Afro"
+  },
+  "language": {
+    "device": "Dilime Göre",
+    "english": "İngilizce",
+    "instrumental": "Enstrümantal",
+    "any": "Herhangi Bir Dil",
+    "mixed": "Karışık",
+    "spanish": "İspanyolca"
   }
 }

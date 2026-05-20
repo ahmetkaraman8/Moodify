@@ -19,3 +19,5 @@ export type ActivityType =
   | 'relaxing'
   | 'driving'
   | 'gaming';
+
+export type LanguageType = 'device' | 'english' | 'instrumental' | 'any' | 'mixed' | 'spanish';
