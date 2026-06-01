@@ -7,3 +7,6 @@ export { InsightCard } from './InsightCard/InsightCard';
 export { WeatherCard } from './WeatherCard/WeatherCard';
 export { RecentSessionCard } from './RecentSessionCard/RecentSessionCard';
 export { MoodFormButton } from './MoodFormButton/MoodFormButton';
+export { MoodSummaryCard } from './MoodSummaryCard/MoodSummaryCard';
+export { GenreButton } from './GenreButton/GenreButton';
+export { ActivityIndicator } from './ActivityIndicator/ActivityIndicator';
