@@ -150,5 +150,14 @@
     "any": "Herhangi Bir Dil",
     "mixed": "Karışık",
     "spanish": "İspanyolca"
+  },
+  "loading": {
+    "messages": [
+      "Enerji ve tempo dengeleniyor",
+      "Duygusal akış düzenleniyor",
+      "Doğru geçiş aranıyor",
+      "Modun analiz ediliyor",
+      "Mükemmel miks oluşturuluyor"
+    ]
   }
 }
