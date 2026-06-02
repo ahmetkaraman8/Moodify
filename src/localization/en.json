@@ -147,5 +147,14 @@
     "any": "Any Language",
     "mixed": "Mixed",
     "spanish": "Spanish"
+  },
+  "loading": {
+    "messages": [
+      "Balancing energy and tempo",
+      "Curating emotional flow",
+      "Finding the right transition",
+      "Analyzing your vibe",
+      "Crafting the perfect mix"
+    ]
   }
 }

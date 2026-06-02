@@ -2,6 +2,7 @@ import { ActivityType, EmotionMoodType, MusicMoodType } from '@/types';
 import { moodShiftMap } from './moodShiftMap';
 import { moodActivityMap } from './moodActivityMap';
 import { activityEmojiMap } from './activityEmojiMap';
+import { useTranslation } from 'react-i18next';
 
 export const capitalizeFirstLetter = (text?: string) => {
   if (!text) return '';
@@ -27,4 +28,10 @@ export const moodActivityNamer = (
 
 export const isActivityType = (value: ActivityType | EmotionMoodType): value is ActivityType => {
   return value in activityEmojiMap;
+};
+
+export const getLoadingMessages = () => {
+  const { t } = useTranslation();
+  const messages = t('loading.messages', { returnObjects: true }) as string[];
+  return messages;
 };
