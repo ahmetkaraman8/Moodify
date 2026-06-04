@@ -18,6 +18,9 @@ export const common = StyleSheet.create({
   justifyCenter: {
     justifyContent: 'center',
   },
+  row: {
+    flexDirection: 'row',
+  },
 
   //Text
   richTextRow: {
