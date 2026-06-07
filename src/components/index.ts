@@ -12,3 +12,4 @@ export { GenreButton } from './GenreButton/GenreButton';
 export { ActivityIndicator } from './ActivityIndicator/ActivityIndicator';
 export { LoadingMessages } from './LoadingMessages/LoadingMessages';
 export { PlaylistPicture } from './PlaylistPicture/PlaylistPicture';
+export { TrackItem } from './TrackItem/TrackItem';
