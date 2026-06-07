@@ -103,5 +103,6 @@ export const colors = {
 
   other: {
     moodFormButton: '#1f1f1e',
+    divider: '#3B3B3B',
   },
 };
