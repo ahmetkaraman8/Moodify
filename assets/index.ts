@@ -4,6 +4,7 @@ import Cloudy from './cloudy.svg';
 import Rainy from './rainy.svg';
 import Night from './night.svg';
 import ArrowRight from './arrow-right.svg';
+import Regenerate from './regenerate.svg';
 
 export const Icons = {
   spotifyIcon: SpotifyIcon,
@@ -12,4 +13,5 @@ export const Icons = {
   rainy: Rainy,
   night: Night,
   arrowRight: ArrowRight,
+  regenerate: Regenerate,
 };

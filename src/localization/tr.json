@@ -1,4 +1,7 @@
 {
+  "general": {
+    "cancel": "İptal"
+  },
   "auth": {
     "spotifyLogin": "Spotify ile devam et",
     "guest": "Ziyaretçi olarak devam et",
@@ -159,5 +162,11 @@
       "Modun analiz ediliyor",
       "Mükemmel miks oluşturuluyor"
     ]
+  },
+  "regenerate": {
+    "title": "Çalma Listesini Yeniden Oluştur",
+    "description": "Bu işlem ruh haline göre yeni bir çalma listesi oluşturacak.",
+    "subdescription": "Mevcut çalma listen değiştirilecek.",
+    "button": "Yeni Çalma Listesi Oluştur"
   }
 }

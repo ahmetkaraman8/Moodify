@@ -13,3 +13,4 @@ export { ActivityIndicator } from './ActivityIndicator/ActivityIndicator';
 export { LoadingMessages } from './LoadingMessages/LoadingMessages';
 export { PlaylistPicture } from './PlaylistPicture/PlaylistPicture';
 export { TrackItem } from './TrackItem/TrackItem';
+export { RegeneratePopup } from './RegeneratePopup/RegeneratePopup';
