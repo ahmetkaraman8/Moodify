@@ -1,4 +1,7 @@
 {
+  "general": {
+    "cancel": "Cancel"
+  },
   "auth": {
     "spotifyLogin": "Continue with Spotify",
     "guest": "Continue as a guest",
@@ -156,5 +159,11 @@
       "Analyzing your vibe",
       "Crafting the perfect mix"
     ]
+  },
+  "regenerate": {
+    "title": "Regenerate Playlist",
+    "description": "This will create a new playlist based on your mood.",
+    "subdescription": "Your current playlist will be replaced.",
+    "button": "Generate New Playlist"
   }
 }
