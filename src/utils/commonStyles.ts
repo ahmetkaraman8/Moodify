@@ -40,6 +40,10 @@ export const common = StyleSheet.create({
   width100: {
     width: '100%',
   },
+  square24: {
+    width: 24,
+    height: 24,
+  },
 
   //Background
   opacity06Background: {
